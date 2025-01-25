@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element selector */
+        div{
+            background-color: red;
+        }
+
+        /* class selector */
+        .red{
+            background-color: green;
+        }
+
+        /* ID selector */
+        #abc{
+            background-color: aqua;
+        }
+
+        /* child selector */
+        /* Here, <p> is not the direct child of div, so it wont get color as blue*/
+        div > p{
+            color : blue;
+            background-color : brown;
+        }
+
+        /* Descendent selector : yha div ke andr p hona chahiye, chahe wo kisi ke bhi through ho(article , div or p) */
+        div  p{
+            color : blue;
+            background-color : brown;
+        }
+
+        /* Universal Selector: sare elements ki  marginand padding zero kr do */
+        *{
+            margin : 0;
+            padding : 0;
+        }
+
+        /* Pseudo Selector : After visiting any link, it would change its color*/
+        a:visited{
+            color : yellow;
+        }
+
+        a:link{
+            color : green;
+        }
+
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color : yellow;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am one</p>
+        <p> I am second </p>
+    </main>
+    <div class="red">
+        I am a div tag
+        
+        <article>
+            <p> I am a para inside div </p>
+        </article>
+    </div>
+
+    <a href="https://www.google.com">Go to Google </a>
+
+    <a href="https://www.facebook.com"> Go to facebook </a>
+    <div>
+        I am second div bro
+    </div>
+
+    <div id="abc">
+        I am third div bro, jow are you
+    </div>
+</body>
+</html>

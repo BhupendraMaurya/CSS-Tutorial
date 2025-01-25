@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+
+    <style>
+        /* change the color of all the <p> as red*/
+        /* It is element selector, because we are doing the changes with
+        with the help of elements */
+
+        p{
+            color : red;
+        }
+
+        /* ID selector : Here # is indicating that we are using the ID selector */
+        #article1{
+            background-color: green;
+        }
+
+        /* Class Selector : HEre dot(.) indicates the class selector 
+        */
+        .paraClass{
+            background-color: yellow;
+        }
+
+        /* Group Selector :  */
+        p,article{
+            width:500px;
+        }
+
+        p.paraClass{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1> Welcome to CSS Tutorial </h1>
+    <p class="paraClass">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia distinctio 
+        iste temporibus optio laborum in accusantium laudantium dicta error deserunt incidunt esse,
+         vero quisquam labore fugit fugiat totam iure dolore?</p>
+    <p class="paraClass">my name is bhupendra </p>
+
+    <p class="paraClass"> my name is dharmendra maurya </p>
+    <article id="article1" class="paraClass">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Non minima nihil numquam placeat officia ducimus sint, delectus est. 
+        Consequuntur repudiandae tempora enim libero 
+        aliquam exercitationem itaque quos a nam ducimus?</article>
+    
+</body>
+</html>
