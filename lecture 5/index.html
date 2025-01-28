@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascade</title>
+
+    <!-- so Here Cascade algorithm  determines that which property would win.and it is determined through specificity. -->
+     <!-- Specificity tells us that which CSS selector is most specific. -->
+
+    <!-- Inline style > ID selector > Class or attribute selector > Element selector > Universal selector -->
+
+    <!-- Note : We can not override the inline style property of CSS(it is very difficult). -->
+    <style>
+        h1 {
+            color: aqua;
+        }
+
+        /* if (!important) keyword is used, then it would have the most priority. */
+        .yellow{
+            color: yellow ;
+        }
+
+        .cred{
+            color: red;
+        }
+/* If u are using the same selector, then the last selector's property would be applied. */
+        .cpurple{
+            color: purple;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" > CSS Specificity </h1>
+    </div>
+</body>
+
+</html>
