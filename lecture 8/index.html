@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=    , initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <!-- kisi bhi element ko visually shadow dene ke liye hum iska use krte hain -->
+
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 34px;
+
+            /* appliying the shadow property  */
+            box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.303);
+        }
+
+        .text-element {  
+            text-shadow: 1px 1px 1px red;
+            border: 2px solid green;
+
+            /* Outline is different from the border. */
+            outline: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am box
+    </div>
+
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto deleniti, laudantium non, tempore et nihil
+        culpa reiciendis maiores impedit necessitatibus quis? Asperiores, ducimus! Eos, officia consequatur? Excepturi
+        aperiam mollitia accusamus obcaecati! Mollitia id consequatur facilis, harum quaerat dolorem eius porro
+        explicabo dolorum aperiam? Consectetur inventore minima repudiandae voluptates maiores.
+    </p>
+</body>
+
+</html>
