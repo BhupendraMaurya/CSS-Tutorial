@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property </title>
+
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border:2px solid blue;
+
+            /* we can make the block level elements as inline using display property. */
+
+            display: inline-block;
+            width : 45px;
+
+        /*  though we are providing the padding and margin , we wont et the result in webpage, so to do this, we have to put this in code : display : inline-block */
+            padding : 45px;
+            margin : 34px;
+            /* display: none;  all the blocks would be disappeared*/
+        }
+
+        .box1{
+            /* visibilty would be hidden but the space of that element would intact
+             */
+
+            /* visibility: hidden; */
+        }
+    </style> 
+</head>
+<body>
+    <div class="box box1">
+        I am a box 
+    </div>
+
+    <div class="box">also a nice box" </div>
+
+    <span>I am good span </span>
+</body>
+</html>
