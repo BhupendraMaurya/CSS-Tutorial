@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+
+    <style>
+        .cards {
+            border: 2px solid black;
+
+            /* IF any image is getting floating outside the boundary
+            then simply use this to take it inside the boundary */
+            display: flow-root;
+        }
+
+        img {
+            /* float left or float right is used to move the imge left or right */
+            float: right;
+            /* float: right */
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        /* if any element do not want to let float any images in either left or right side, then use the clear property. */
+
+        .card:nth-child(3){
+            background-color: aqua;
+            /* clear: right; */
+            clear:left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://imgs.search.brave.com/4zNYDlPFNWNFH8PfGaJOH0zQMqe0dtXuvS8oe8Rp3h4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTE2/MjUwMDgwL3Bob3Rv/L2d1ZXN0cy1wb3Nl/LXdpdGgtanVkaXRo/LWxlaWJlci1wcm9k/dWN0cy1hdC10aGUt/cGFweXJ1cy1jYWYl/QzMlQTktZHVyaW5n/LWltZy1ueWZ3LXRo/ZS1zaG93cy1hdC5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/ZWkycHRjanlVRGxl/eHJzMmgwS0FLUDNk/OHFWRW5WQ2M1UUNj/SjBfdDlEND0"
+            alt="image" width="230px">
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla suscipit repudiandae sed ut provident
+                assumenda est hic illum ea esse sapiente expedita, nemo iusto facilis repellat quis, neque iure deserunt
+                asperiores blanditiis. Porro, saepe incidunt commodi iste neque est nostrum sint eveniet illo sunt eos.
+            </p>
+        </div>
+
+        <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, aut? Perferendis, dolor enim
+            ipsa sunt saepe delectus deserunt architecto voluptates repellendus accusamus ipsam praesentium similique
+            doloremque reprehenderit obcaecati excepturi consequuntur possimus id cupiditate autem odio ex facilis hic
+            voluptate! Ipsum voluptatem eos dicta exercitationem optio tempora inventore error ipsa, itaque impedit est,
+            pariatur cumque illum dolor eius soluta minima. Beatae omnis incidunt qui nesciunt nemo dolorem accusantium
+            ab quia magnam eos cupiditate modi sapiente ipsum illum labore quidem corrupti sequi voluptas ex recusandae,
+            eius, facere consequatur vitae. Corrupti similique eligendi, mollitia quidem quia doloremque ipsa officia
+            est placeat labore asperiores impedit, veritatis, ullam dolorum qui? Ducimus, provident. Est repellat autem
+            architecto! Labore ea porro accusamus aliquam dolorem repellendus. Magni, non eligendi? Distinctio adipisci
+            nulla nisi ut deserunt nihil qui reprehenderit quasi blanditiis quaerat odit voluptate error sapiente neque
+            veniam esse, iure impedit nemo maxime. Veritatis consequatur accusamus natus totam numquam et, laborum a
+            deserunt nam necessitatibus suscipit voluptatum recusandae fugit ullam accusantium eligendi earum maiores
+            omnis distinctio? Dicta reprehenderit ea quibusdam deserunt nobis perspiciatis ipsum maxime iure repellat
+            aspernatur eius itaque inventore vitae rerum, praesentium id delectus incidunt voluptates! Animi itaque odit
+            debitis magnam aliquid asperiores sed molestiae illum cumque aliquam eos dignissimos deleniti, a error
+            accusantium fuga totam ab praesentium illo perspiciatis odio adipisci quod autem laudantium? Nostrum nulla
+            aliquam et minima consectetur optio eligendi, aperiam, cupiditate expedita ipsa harum? Ut vero maxime
+            numquam a architecto repellat repudiandae ex quidem! Tempora vel, odit at commodi magnam fuga quibusdam quo?
+            Dolorem odio fugit autem optio eos obcaecati facilis totam reiciendis eveniet saepe voluptatem architecto
+            nam repudiandae rerum, iure praesentium, ducimus porro ex iusto tempora molestias soluta. Qui eveniet enim
+            vero blanditiis iure. Veniam temporibus similique vel, qui maxime amet hic atque consectetur vitae alias
+            quae explicabo doloremque numquam tempora quisquam a maiores quis, adipisci nostrum facilis fuga eos quidem
+            illum. Praesentium nisi id eaque nostrum quam dolores officia corrupti numquam repudiandae? Modi rerum ad
+            repellendus voluptatum velit nemo. Esse, perspiciatis? Rem, enim ipsum!</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>
