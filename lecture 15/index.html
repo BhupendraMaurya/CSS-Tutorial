@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* iska mtlb, agr box  first child hai, to iska background color red kr do */
+        /* .box:first-child {
+            background-color: rgb(225, 194, 194);
+        } */
+
+        /* means box ke first liine ka color aqua kr do */
+        /* .box::first-line {
+            color: aqua;
+        } */
+
+        /* bosex ke andr sbhi ka color change kr do */
+        .boxes *{
+            color:blueviolet;
+            border: 2px solid red;
+        }
+
+        /* Attribute selector */
+        /* jiska bhi data color primary ho, uska margin 45px kr do. */
+        /* [data-color="primary"]{
+            margin-top:45px;
+        } */
+
+        /* group selector: if selecting multiple elements */
+
+        /* p,a,.box, [data-color="primary"]{
+            margin-top:45px;
+        }
+
+        /*nth child pseudo selector:  jo bhi child even position pr hoga uske liye */
+        /* .box:nth-child(even){
+            background-color: aqua;
+        }
+/* selecting the nth child from last of position 1 */
+        /* .box:nth-last-child(2){
+            background-color: red;
+        } */
+
+/* kisi bhi element ko CSS ke through dynamically insert kiya ja skta h
+inserting this content before starting of the boxes. */
+        .boxes::before{
+            content: "Harry is a good educator";
+            color:chartreuse
+        }
+/* Before and after are used when we want to insert any element of content dynamically. */
+        .boxes:after{
+            content:"I love my family";
+            color:chartreuse;
+        }
+/* selected elements ki style change krne ke liye */
+        ::selection{
+            background-color: black;
+            color:aqua;
+        }
+
+        .box::first-letter{
+            color: red;
+
+        }
+
+        input::placeholder{
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am box, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestias,
+            cumque harum voluptates error a deleniti vitae quos ab impedit asperiores consequuntur labore placeat unde
+            suscipit necessitatibus ullam itaque tenetur atque voluptate cum! Ullam commodi fuga excepturi optio
+            incidunt mollitia, expedita dolores veniam nisi necessitatibus!</div>
+
+        <div class="box">Hey I am box</div>
+        <div data-color="primary" class="box"> I am box </div>
+
+        <div class="box">Hey I am box</div>
+            <input type="text" placeholder="Type your question">
+    </div>
+</body>
+
+</html>
