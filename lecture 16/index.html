@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FlexBox</title>
+<!-- Hm layouts ko move krne ke liye flexbox ka use krte hai
+ like layout ko left to right move krna or center krna  -->
+    <style>
+        .container{
+            border:2px solid red;
+            /* now we can use the property of flexbox and by default all the items will move from left to right */
+            display: flex;
+
+            height: 80vh;
+/* will go in the center from left to right */
+            /* justify-content: center; ue only when we have singlle line*/
+
+            /* will go in center fro top to bottom : use when we have multiple lines*/
+            align-items:center;
+
+            flex-wrap: wrap;
+            align-content: center;
+
+            /* flex-direction: row; */
+
+            flex-flow: row wrap;
+
+            /* items ke bich ka gap */
+            gap:30px;
+         }
+
+        .iteam{
+            height: 62px;
+            width: 62px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+
+            
+
+        }
+
+        .order-1{
+            order:1;
+            
+            flex-shrink: 1;
+        }
+
+        .order-2{
+            order:2;
+        }
+
+
+        .order-3{
+            order:3;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="iteam order-2">1</div>
+            <div class="iteam order-3">2</div>
+            <div class="iteam">3</div>
+            <div class="iteam order-1">4</div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+            <div class="iteam"></div>
+           
+        </div>
+    </main>
+</body>
+</html>
